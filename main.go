@@ -3,12 +3,16 @@ package main
 import (
 	"belajargo/basic/array"
 	"belajargo/basic/constant"
+	"belajargo/basic/operator"
+	"belajargo/basic/pointer"
+	"belajargo/basic/slices"
 	"belajargo/basic/variable"
 	"fmt"
 )
 
 func main() {
-	fmt.Println("Hello World")
+	defer fmt.Println("World")
+	fmt.Println("Hello")
 
 	//variable
 	variable.Variable()
@@ -20,4 +24,16 @@ func main() {
 	fmt.Println()
 	//Array
 	array.Array()
+
+	// Slices
+	fmt.Println()
+	slices.Slice()
+
+	// Operator
+	fmt.Println()
+	operator.Operator()
+
+	// Pointer
+	fmt.Println()
+	pointer.Pointer()
 }
